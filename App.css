@@ -4,6 +4,17 @@
 Button{
   background-color: blue;
 }
+.nav-div{
+  margin: 0%;
+  padding: 1%;
+  background-color: rgb(152, 85, 214);
+  width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+text-align: center;
+text-decoration: bold;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
