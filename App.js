@@ -6,8 +6,14 @@ function App() {
   return (
     <>
     <div className="main-div">
-      <h2>this is a web App</h2>
-      
+      <div className='nav-div'>
+      <ul>
+        <li>NavBar</li>
+        <li>NavBar</li>
+        <li>NavBar</li>
+        <li>NavBar</li>
+      </ul>
+      </div>
       <Button variant="contained" color="primary">
   Primary
 </Button>
