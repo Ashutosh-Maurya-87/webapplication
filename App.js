@@ -1,11 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 import { Button, Link } from '@material-ui/core'
+import CompA from './CompA';
+import { createContext } from 'react';
 
-function App() {
+const FirstName = createContext ();
+
+const App =()=> {
+  
   return (
     <>
-    <div className="main-div">
+    {/* <div className="main-div">
       <div className='nav-div'>
       <Link href="#" >Home</Link>
       <Link href="#" >Feedback</Link>
@@ -14,10 +19,15 @@ function App() {
       </div>
       <Button variant="contained" color="primary">
   Primary
-</Button>
-    </div>
+</Button> */}
+<FirstName.Provider value="AShu">
+<CompA />
+</FirstName.Provider>
+     
+    {/* </div> */}
     </>
   );
 }
 
 export default App;
+export { FirstName } ;
