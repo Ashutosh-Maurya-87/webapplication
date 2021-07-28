@@ -5,6 +5,7 @@ import CompA from './CompA';
 import { createContext } from 'react';
 
 const FirstName = createContext ();
+const LastName = createContext ();
 
 const App =()=> {
   
@@ -21,7 +22,9 @@ const App =()=> {
   Primary
 </Button> */}
 <FirstName.Provider value="AShu">
+  <LastName.Provider value="Maurya">
 <CompA />
+</LastName.Provider>
 </FirstName.Provider>
      
     {/* </div> */}
